@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+	<meta charset="utf-8"> <!-- utf-8 works for most cases -->
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" rel="stylesheet">
+
+	<!-- CSS Reset : BEGIN -->
+	<style>
+		html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+			background: #f1f1f1;
+		}
+
+		/* What it does: Stops email clients resizing small text. */
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		/* What it does: Centers email on Android 4.4 */
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		
+		/* What it does: Uses a better rendering method when resizing images in IE. */
+		img {
+			-ms-interpolation-mode: bicubic;
+		}
+
+		/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+		a {
+			text-decoration: none;
+		}
+
+		/* What it does: A work-around for email clients meddling in triggered links. */
+		*[x-apple-data-detectors],
+		/* iOS */
+		.unstyle-auto-detected-links *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+		.a6S {
+			display: none !important;
+			opacity: 0.01 !important;
+		}
+
+		/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+		.im {
+			color: inherit !important;
+		}
+
+		/* If the above doesn't work, add a .g-img class to any image in question. */
+		img.g-img+div {
+			display: none !important;
+		}
+
+
+		/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+		@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+			u~div .email-container {
+				min-width: 320px !important;
+			}
+		}
+
+		/* iPhone 6, 6S, 7, 8, and X */
+		@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+			u~div .email-container {
+				min-width: 375px !important;
+			}
+		}
+
+		/* iPhone 6+, 7+, and 8+ */
+		@media only screen and (min-device-width: 414px) {
+			u~div .email-container {
+				min-width: 414px !important;
+			}
+		}
+	</style>
+
+	<!-- CSS Reset : END -->
+
+	<!-- Progressive Enhancements : BEGIN -->
+	<style>
+		.bg_white {
+			background: #ffffff;
+		}
+
+		.bg_light {
+			background: #fafafa;
+		}
+
+		.bg_black {
+			background: #000000;
+		}
+
+		.bg_dark {
+			background: #1e649f;
+		}
+
+		.email-section {
+			padding: 1.5em;
+		}
+		.text-center{ text-align: center; }
+
+		/*BUTTON*/
+.signeture-link{background:#29ADA2!important; padding:15px 20px; border-radius: 4px; color: #fff; text-transform: uppercase;}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: 'Work Sans', sans-serif;
+			color: #000000;
+			margin-top: 0;
+			font-weight: 400;
+		}
+
+		body {
+			font-family: 'Work Sans', sans-serif;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 1.8;
+			color: #000;
+		}
+
+		a {
+			color: #1e649f;
+		}
+
+		p {
+			margin-top: 0;
+		}
+
+
+		/*LOGO*/
+
+		.logo h1 {
+			margin: 0;
+			 margin-top: 10px;
+		}
+
+
+
+
+
+		/*COUNTER*/
+		.counter {
+			width: 100%;
+			position: relative;
+			z-index: 0;
+		}
+
+		.counter .overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			content: '';
+			width: 100%;
+			background: #000000;
+			z-index: -1;
+			opacity: .3;
+		}
+
+		.counter-text {
+			text-align: center;
+		}
+
+		.counter-text .num {
+			display: block;
+			color: #ffffff;
+			font-size: 34px;
+			font-weight: 700;
+		}
+
+		.counter-text .name {
+			display: block;
+			color: rgba(255, 255, 255, .9);
+			font-size: 13px;
+		}
+/*		.email-container{ background: url("images/logo_login.png") no-repeat #fff right bottom; }*/
+.email-container{ background:#fff }
+
+		/*HEADING SECTION*/
+
+		.heading-section h2 {
+			color: #000000;
+			font-size: 28px;
+			margin: 0;
+			line-height: 1.4;
+			font-weight: 400;
+		}
+
+		.heading-section-white {
+			color: rgba(255, 255, 255, .8);
+		}
+
+		.heading-section-white h2 {
+			line-height: 1;
+			color: #fff;
+			font-size: 20px;
+			padding-bottom: 0;
+		}
+
+		
+
+		@media screen and (max-width: 500px) {}
+	</style>
+
+
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1;">
+	
+		
+		<div style="max-width: 600px; margin: 0 auto;" class="email-container">
+			<!-- BEGIN BODY -->
+			<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+				style="margin: auto;">
+				<tr>
+					<td colspan="2" valign="top"  style="padding: .5em 2.5em 0 2.5em; background:#ebebeb">
+						<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td class="logo" style="text-align: center;">
+<!--									<h1><a href="#"><img src="" width="150px" alt="logo"></a></h1>-->
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr><!-- end tr -->
+
+
+
+
+
+
+
+<tr>
+	<td colspan="2" class="email-section" style="padding:1.5em; background:#ebebeb; padding-bottom: 0;">
+		
+                                                    <h1 style="font-family: 'Work Sans', sans-serif; margin:.5rem 0 0 0; line-height:30px; text-align: left;text-decoration: underline; color: #5B716C;">OTP from Low Code No Code</h1>
+
+                                                
+													<p style="font-family: 'Work Sans', sans-serif; margin-top:50px; line-height:18px;">Hello,</p>
+                                           
+                                                <p style="font-family: 'Work Sans', sans-serif; margin:1rem 0 0 0; text-align: justify; line-height:30px;">
+		<p>Greetings of the day!<br>
+		{{ getName }} wants to Register as Admin with email: {{ email }}<br>
+		Please share the code {{ oneTimePassword }} to grant Admin access.<p>
+
+                                                
+                                                
+                                               
+	</td>
+	
+
+</tr>
+
+
+<tr>
+	<td colspan="2" class="email-section" style="background:#ebebeb; padding-top:0">
+ <p style="font-family: 'Work Sans', sans-serif; margin:0.5rem 0 10px 0; line-height: 25px;">
+                                                	Best regards,<br>
+	 <a href="">Low code No Code</a>
+                                                </p>
+		 <p style="font-family: 'Work Sans', sans-serif; margin:0.5rem 0 10px 0; line-height: 25px;">
+                                                </p>
+                                            </td>
+                                        </tr>
+
+
+			
+
+			</table>
+
+		</div>
+	
+</body>
+
+</html>

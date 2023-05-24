@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UTL Code Helper</title>
+  </head>
+  <body>
+    <h1>UTL Code Helper</h1>
+    <form>
+      <label for="question">Question:</label>
+      <input type="text" id="question" name="question">
+      <button type="button" id="submit-button">Submit</button>
+    </form>
+    <h2>Response:</h2>
+    <div id="response">ask your question</div>
+    <script>
+      document.querySelector('#submit-button').addEventListener('click', () => {
+        const question = document.querySelector('#question').value;
+        fetch('http://localhost:5000/utl/pathfinder', {
+          method: 'POST',
+          body: JSON.stringify({
+            prompt: question
+          })
+        })
+          .then(response => response.json())
+          .then(data => {
+            const responseText = data.choices[0].text;
+            document.querySelector('#response').innerHTML = responseText;
+          })
+          .catch(error => {
+            document.querySelector('#response').innerHTML = 'Error: ' + error;
+          });
+      });
+    </script>
+  </body>
+</html>
